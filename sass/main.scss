@@ -1,0 +1,185 @@
+@import "compass/reset";
+
+@font-face {
+  font-family: "Banana";
+  font-weight: 400;
+  src: url('../fonts/BananaGrotesk-Regular.otf');
+}
+
+@font-face {
+  font-family: "Meek";
+  font-weight: 400;
+  src: url('../fonts/Meek_Display_Medium.ttf');
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+}
+
+html, body {
+  font-family: 'Banana';
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primary: #603DBD;
+  --secondary: #D5FC6D;
+  --tertiary: #FC6C6C;
+}
+
+a, .btn {
+  transition: all 0.15s ease-in-out;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 100%;
+}
+
+h1, h2 {
+  font-family: Meek, sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+body {
+  color: var(--primary);
+}
+
+p, li {
+  line-height: 160%;
+}
+
+hr {
+  border-color: #fff;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  background: blue;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  background: blue; 
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+// Helpers
+
+.shadow-yellow {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.btn {
+  border: 2px solid var(--primary);
+  padding: 1rem;
+  height: 70px;
+  border-radius: 70px;
+  background: var(--secondary);
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary)!important;
+}
+
+// Page layout
+
+.gray-section {
+  background: #EFECF7 url(../images/bg-gray.png) repeat;
+  background-size: cover;
+}
+
+.gray-section .header {
+  border-bottom: 1px solid var(--primary);
+  position: relative;
+  padding: 1.5rem;
+}
+
+.gray-section .logo {
+  width: 100%;
+  text-align: center;
+}
+
+.hero {
+  padding: 4rem 0;
+}
+
+.hero-img {
+  order: 1;
+}
+
+.workshop .row {
+  height: 100%;
+  background: var(--tertiary);
+}
+
+.purple-content {
+  background: var(--primary) url('../images/bg-purple.jpg');
+  background-size: cover;
+}
+
+.section-content {
+  color: #fff;
+  padding: 3rem;
+}
+
+.disclaimer {
+  font-size: 0.7rem;
+  position: relative;
+}
+
+.disclaimer .content {
+  border: 1px solid #fff;
+  padding: 1rem;
+  background: var(--tertiary);
+  z-index: 1;
+  position: relative;
+  line-height: 150%;
+}
+
+.signup-btn {
+  font-size: 1.5rem;
+  height: 85px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logos a {
+  padding: 0.5rem;
+}
+
+.footer-logos img {
+  width: 36px;
+  height: auto;
+}
